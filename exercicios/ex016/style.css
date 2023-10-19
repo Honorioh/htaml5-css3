@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   /* o estilo da fonte*/
+p {
+    text-align: justify; /*para alinhar as linhas dos paragrafos*/
+}
+body{
+    background-image: linear-gradient(to right, #FCEB87, #E4C970, #A7832F);
+}
+main{
+    background-color: white; /* a cor no fundo do texto*/
+    border-radius: 20px; /* para arredondar as bordas*/
+    box-shadow: 5px 5px 15px red; /*para colocar embaixo do texto main uma sombra como se fosse uma pagina*/
+    width: 600px; /*para escolher o tamanho da janela doi texto main*/
+    padding: 10px; /*para dar mais um espaço no final dos paragrafos*/
+    margin: auto; /* para deixar o texto no meio do site independente do tamanho da tela*/
+}
+h1{
+    color: brown; /*cor da fonte do h1*/
+    text-align: center; /* alinhas no meio o h1*/
+    text-shadow: 2px 2px 2px rgba(107, 28, 28, 0.705); /*sombra no texto*/
+}
+h2{
+    color: rgb(70, 15, 15);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*Seletores personalizados
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = childres
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            /* mudada a cor da fonte do item envelopado sem ser visitado*/
+            color: green
+            text-decoration: none;
+            /*tirar o sublinhado*/
+            font-weight: bold;
+            /*negrito*/
+        }
+
+        a:visited {
+            /* coloquei que caso vc aperte no site no link que foi envelopado (a) ficara visitado e mudara de cor*/
+            color: red;
+            
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            /*sublinhar quando colocar o mouse em cima*/
+        }
+
+        .especial {
+            background-color: rgba(73, 138, 73, 0.425);
+        }
+
+        .especial::before {
+            content: '↝ ';
+        }
+        
+        .especial::after {
+            content: ' ↜';
+        }
+
+        a:active {
+            color: yellow
+            /*clica no atalho muda de cor*/
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.githunio" target="_blank">Repositório GitHub</a></li>
+        <!--para envelopar shift+ctrl+p, coloca tag "a" e endereço da pagina, par air para uma aba nova é a tag target= blank-->
+        <li><a href="https://www.youtube.com/results?search_query=cursos+em+video" class="especial">Canal Youtube</a></li>
+        <li>S<a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas">ite do Curso em Video</a></li>
+    </ul>
+    
+</body>
+</html>

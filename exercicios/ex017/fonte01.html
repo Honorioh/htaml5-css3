@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="iconleao.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas são
+            cm = centimentro, mm= milimetro, in= polegada,px= pixel, pt= ponto, pc= paica
+            Medidas Relativas
+            em= relativo a altura do M, ex= altura do X, rem, vw, vh, %
+            medidas recomendadas é o px e em
+            não pode ter espaço entre o numero e a medida
+            */ 
+            font-size: 16px; /* geralmente usado 16px, se quiser usar o em, geralmente 16px é 1em, tentar usar sempre o em*/
+
+            font-weight: 500;
+            /*lighter= magrinho, normal= normal, bold=gordinho, bolder= mais gordo
+            podemos colocar tambem em numerico a largura, começa 100 e vai ate 900*/
+            font-style: italic;
+            /* quiser colocar italico */
+            text-decoration: underline;
+            /*quiser sublinhar*/
+        }
+
+        h1 {
+            font-family: 'Work Sans' , sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* shothand font, para fazer todos esses comandos mais rapidos, tem que ser na seguinte ordem:
+            font-style -> font-weight -> font-size -> font-family
+            posso usar da seguinte forma, font: italic bolder 3em 'work sans*/
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus debitis quas explicabo corporis ea doloribus neque nulla aperiam quae veniam adipisci repellat magni laboriosam tenetur non cupiditate nobis, necessitatibus nesciunt.</p>
+    <h2>subtítulos do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ratione ipsum deserunt odit vero dignissimos explicabo reprehenderit perspiciatis dicta molestiae esse sapiente! Saepe iusto magni, rem sit laudantium minima similique!</p>
+</body>
+</html>
