@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de fundo</title>
+    <link rel="shortcut icon" href="iconleao.ico" type="image/x-icon">
+    <style>
+        body {
+            background-image: url(imagens/wallpaper006.jpg);
+        }
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.541);
+            width: 300px;
+            height: 300px;
+        } /*usando a class para mexer em todas div ao msm tempo que sao div quadrado, para criar quadrados na pagina segue acima, display inline block é para deixar um quadrado do ladro do outro, border é a borda do quadradp, width largura e height altura*/
+
+        div#q1 { /*aqui modicarei somente esta div especifica*/
+            background-image: linear-gradient(to right, rgb(117, 117, 168), rgb(25, 25, 136)); /para fazer um degrade usa-se backgroud image
+        }
+
+        div#q2 {
+            background-color: aquamarine;
+        }
+
+        div#q3 {
+            background-image: url(imagens/pattern004.png);
+        } /*para colocar uma imagem usa-se backgroud-image, URL e coloca o atalho da imagem*/
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
