@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Caixas Verticais</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative; /*conforme muda o tamanho do navegador a posição acompanha*/
+            height: 96vh;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+
+            position: absolute; /*a posição da caixa nao se move, independente do tamanho da pagina q vc aumente ou diminua*/
+            height: 200px;
+            width: 400px;
+            background-color: yellowgreen;
+
+            left: 50%; /*left e top usado para colocar a box no meio ou em qualquer lugar da pagina que eu quiser travada*/
+            top: 50%;
+            /*porem a localizxação da caixa sempre se inicia no canto superior esquerdo, ou seja pra ficar centro no centro tenho q usar mais uma tag, segue abaixo*/
+
+            transform: translate(-50%, -50%); /*assim puxa para esquerda e pra cima a caixa do centro, centralizando os centro*/
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
