@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position:relative;
         }
 
         td, th {
@@ -32,6 +33,19 @@
         thead, tfoot {
             background-color: rgb(66, 66, 66);
             color: white;
+        }
+
+        /*para colocar o cabeçalho fixo primeiro muda no style, table coloca position: relative, somente depois pode se usar position:sticky, que é colar a posição e colocar que esta colado no top ou onde quiser.*/
+        thead > tr > th {
+            position:sticky;
+            top: 0;
+            background-color: rgb(66, 66, 66);
+
+        }
+
+        /*para colocar efeito dobrado é a pseldo classe abaixo tr:nth-child(2n) a 2n significa que a cada duas linhas aparecerá o cinza, se colocar 3n a cada 3 linhas. podendo usar tb inves de 2n, usar odd=impar ou even=par */
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
 
         td.num {
