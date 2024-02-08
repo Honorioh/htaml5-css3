@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udo de Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            /*o width(largura) nesse caso estou usando quase 100 % da largura da tela, usando 95vw)*/
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha.</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ratione voluptas laboriosam culpa exercitationem dolore odio error atque. Consectetur vitae rerum, repellat accusamus nesciunt alias similique tempore ipsum fugiat adipisci! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque delectus quam fugit. Similique, possimus? Inventore quae ratione fugit, magni eligendi voluptatem illum delectus omnis, accusantium expedita id? Dolores, officiis sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae modi temporibus vitae nulla repudiandae? Repellat molestias quod enim facilis! Eveniet unde neque similique aliquid debitis, ipsam vel a eaque temporibus.</p>
+
+    <ul>
+        <!-- para colocar o link e abrir no iframe, vc precisa usar a tag no iframe name=e colocar um nome pro name no caso, e no link use o atalho d apagina e target=nome que colocou no name-->
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure laborum deserunt repudiandae provident quae, quaerat deleniti! Reiciendis impedit esse odio sequi explicabo quam mollitia voluptatum, perferendis animi tempora exercitationem.</p>
+
+    <iframe name="frame" src="" frameborder="1"></iframe>
+</body>
+</html>
