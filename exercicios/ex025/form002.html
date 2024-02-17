@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="iconleao.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome do usuário" autocomplete="username">
+            <!--AUTOCOMPLETE, para ele saber oq esta completando quando se deixa o autocomplete ligado, para usuario username, para senha é current-password, quando ja tem o usurario criado, ou se for pra cirar uma senha é new password-->
+
+            <!--PLACEHOLDER é uma dica que aparece na caixa de digitar, dizendo o que escrever-->
+            
+            <!--minlenght e max, são para colocar o minimo e maximo de caracteres, exemplo minimo de 5 letras para usuário / SIZE é o tamanho da caixa de digitar, caso ai seria pra mostrar so 10 caracteres, mas pode digitar mais e aparece rolagem-->
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="5" maxlength="15" autocomplete="current-password">
+            <!--quando se coloca o type password, automaticamente quando se escreve no cadastro aparece como astericos, nao mostrando os caracteres / REQUIRED é para não denxar enviar sem preencher os campos, ou seja, campo obrigatorio-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!--type submit, como ja foi dito para enviar, e o reset é para resetar as caixas ou limpar-->
+        </p>
+    </form>
+</body>
+</html>
