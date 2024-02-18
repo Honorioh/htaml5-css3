@@ -11,7 +11,37 @@
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required minlength="5" max="30" placeholder="nome completo" autocomplete="name">
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="30 " placeholder="nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="imedia"> Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+            <!--no caso as tag min e max é para minimo e maximo de numeros. ja o step, é de quanto em quanto pode mudar a nota-->
+        </p>
+
+        <p>
+            <label for="imes"> Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2023-02" required>
+            <!--tag month para trabalhar com data, no caso mês, posso usar o value para colocar um valor, ou seja o mês que ja vem escrito, mesmo serve pra nota,-->
+        </p>
+
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia">
+            <!--usado para colocar uma data da prova no caso, com dia, mes e ano-->
+        </p>
+
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+            <!--time usado para colocar hora que sera a prova-->
+
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
     
