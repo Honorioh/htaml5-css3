@@ -1,0 +1,66 @@
+@charset "UTF"
+
+/* configuração gerais mobile first*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    
+    background-color: lightgray;
+}
+
+header {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+menu {
+    
+    display: block;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    color: white;
+    background-color: rgb(66, 65, 65);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+menu > ul> li > a:hover {
+    background-color: lightgray;
+}
+
+main {
+    background-color: white;
+    width: 90vw;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    margin: auto; /*deixar o texto do main no meio*/
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify; /*deixar ajeitado o texto*/
+    margin-bottom: 20 px;
+    text-indent: 20px; /*espaço no inicio de cada paragrafo*/
+}
