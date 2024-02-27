@@ -2,7 +2,7 @@
 
 /* configuração gerais mobile first*/
 
-* {
+*{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -21,11 +21,26 @@ header {
 header > h1 {
     text-align: center;
     padding: 10px;
+    
+}
+
+span#burguer {
+    background-color: rgb(61, 60, 60);
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    cursor: pointer; /*aparece uma mãozinha quando vai clicar no menu*/
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
 }
 
 menu {
     
-    display: block;
+    display: none; /*quando se usa display block o menu fica aparecendo o tempo todo, colocaremos display none e usaremos java screep para fazer ele aparecer quando clica no hamburguer*/
 }
 
 menu > ul {

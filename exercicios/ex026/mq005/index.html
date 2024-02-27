@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--css a cima é para colocar o icone do hamburguer foi todo pego no site que esta nas anotações, link vem pronto depois cola o span ou i class  proximo do menu la embaixo-->
     <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main{
+            margin-top: 10px;
+        }        ]
+    </style>
 </head>
 <body>
     <Header>
         <h1>Meu Site</h1>
-        <Menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <Menu id="itens"> <!--para usar o icone menu, vc tem q usar JS usado a cima onclick e no menu vc cria um id, depois cria-se no final aqui criado, script como segue abaixo-->
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,5 +43,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At vitae minus numquam quia atque a eveniet porro, nostrum voluptas deleniti neque adipisci repellat sit error vero voluptates rem odio sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, molestiae iste? Deserunt minus provident aperiam, quibusdam atque incidunt, sint culpa earum sit quis nobis impedit ullam eligendi nulla, error porro.</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        /*essa parte é javascreet*/
+    </script>
 </body>
 </html>
