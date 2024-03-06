@@ -1,0 +1,29 @@
+@charset "UTF-8"
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body {
+    background-color: lightsalmon;
+    /*o body pode ser usado como pai no display flex, porem o professor não acha bacana, prefere usar no caso no main*/
+}
+
+main {
+    background-color: lightgreen;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;/*para centralizar o conteudo, usa justify content center e align items center*/
+    align-items: center;
+}
+
+section {
+    background-color: lightseagreen;
+    height: 200px;
+    width: 200px;
+}
